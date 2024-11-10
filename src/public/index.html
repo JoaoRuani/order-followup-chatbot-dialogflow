@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-commerce Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar is-white">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold is-size-4" href="#">BrandName</a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a href="#" class="navbar-item">Home</a>
+          <a href="#" class="navbar-item">Shop</a>
+          <a href="#" class="navbar-item">About</a>
+          <a href="#" class="navbar-item">Contact</a>
+          <a href="#" class="navbar-item">
+            <span class="icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero is-dark is-medium is-bold" style="background-image: url('https://via.placeholder.com/1920x600'); background-size: cover; background-position: center;">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">Welcome to Our Shop</h1>
+        <h2 class="subtitle">Discover our collection of amazing products</h2>
+        <a href="#" class="button is-light is-large">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-3">Featured Products</h2>
+      <div class="columns is-multiline">
+        
+        <!-- Product Card -->
+        <div class="column is-4">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://via.placeholder.com/300" alt="Product Image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-4">Product Name</p>
+              <p class="content">Short description of the product.</p>
+              <p class="has-text-weight-bold is-size-5">$29.99</p>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item button is-link is-fullwidth">Add to Cart</a>
+            </footer>
+          </div>
+        </div>
+        
+        <!-- Repeat similar product cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer has-background-dark has-text-white-ter">
+    <div class="content has-text-centered">
+      <p>&copy; 2024 BrandName. All rights reserved.</p>
+      <div class="buttons is-centered">
+        <a href="#" class="button is-link is-outlined">Facebook</a>
+        <a href="#" class="button is-link is-outlined">Instagram</a>
+        <a href="#" class="button is-link is-outlined">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Font Awesome for Icons (Optional) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger intent="WELCOME" chat-title="UnoesteAula" agent-id="571e228d-021a-495b-9fd0-2d6c5fbb4ee7"
+      language-code="pt-br"></df-messenger>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx ./src/index.ts",
+    "debug": "tsx --inspect-brk ./src/index.ts",
+    "watch": "tsx watch ./src/index.ts",
+    "build": "tsc"
+  },
+  "prisma": {
+    "seed": "tsx ./src/prisma/seed.ts",
+    "schema": "./src/prisma/schema.prisma"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^5.21.1",
+    "express": "^4.21.1",
+    "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.6",
+    "prisma": "^5.21.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
